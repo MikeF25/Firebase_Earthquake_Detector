@@ -325,7 +325,7 @@ void setup() {
 void loop() {
   delay(loopFre);
   sensors_event_t a, g, temp;
-	mpu.getEvent(&a, &g, &temp);
+  mpu.getEvent(&a, &g, &temp);
   Xvalue = a.acceleration.x;
   Yvalue = a.acceleration.y;
   Zvalue = a.acceleration.z;
